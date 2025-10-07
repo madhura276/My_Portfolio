@@ -5,10 +5,6 @@ This portfolio showcases my skills, projects, and contact information in Data Sc
 
 ---
 
-Welcome to my **interactive Streamlit portfolio**!  
-This portfolio showcases my skills, projects, and contact information in Data Science, Machine Learning, and AI.
-
----
 
 ## 💻 Live Portfolio
 Check out my live portfolio here:  
