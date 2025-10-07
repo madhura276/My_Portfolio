@@ -56,7 +56,7 @@ elif page == "🛠 Skills":
         st.subheader("Tools & Platforms")
         st.write("- Streamlit\n- Power BI, Excel\n- GitHub")
 
-        st.subheader("Soft Skills")
+        st.subheader("Behavioural Skills")
         st.write("""
         - Time Management  
         - Adaptability
@@ -68,9 +68,11 @@ elif page == "📂 Projects":
 
     project_list = [
         {
-            "title": "📊 SMS Spam Detection",
-            "desc": "A Machine Learning project using NLP to classify messages as Spam or Not Spam.",
-            "link": "https://github.com/madhura276/SMS-Spam-Detection"
+            
+            "title": "🛒 Online Shopping Cart",
+            "desc": "Built a shopping cart system with product listing, cart updates, and checkout simulation.",
+            "link": "https://github.com/madhura276/Online-Shopping-Cart"
+            
         },
         {
             "title": "🎓 Student Score Manager",
@@ -78,9 +80,10 @@ elif page == "📂 Projects":
             "link": "https://github.com/madhura276/student-management-system"
         },
         {
-            "title": "🩺 Cervical Cancer Detection",
-            "desc": "AI-driven academic project using research papers for cancer detection.",
-            "link": "#"
+            "title": "Student CRUD Application with Python & MySQL",
+            "desc": "Developed a menu-driven application to manage student records with full CRUD functionality. Implemented modular programming using Python and connected to a MySQL database for persistent storage.",
+            "link": "https://github.com/madhura276/Student-CRUD-Python-"
+           
         },
         {
             "title": "📈 Data Analysis with Pandas & NumPy",
@@ -88,11 +91,19 @@ elif page == "📂 Projects":
             "link": "https://github.com/madhura276/Netflix_Data_Analysis"
         },
         {
-            "title": "🛒 Online Shopping Cart",
-            "desc": "Built a shopping cart system with product listing, cart updates, and checkout simulation.",
-            "link": "https://github.com/madhura276/Online-Shopping-Cart"
-        }
-    ]
+            "title": "📊 SMS Spam Detection",
+            "desc": "A Machine Learning project using NLP to classify messages as Spam or Not Spam.",
+            "link": "https://github.com/madhura276/SMS-Spam-Detection"
+        },
+        {
+            "title":"Exploratory Data Analysis (EDA) on Iris Dataset 🌸",
+            "desc":"Performed detailed EDA on the Iris dataset using Python, Pandas, Matplotlib, and Seaborn, creating visualizations to analyze feature distributions and relationships across species.",
+            "link":"https://github.com/madhura276/Iris_Data_Analysis"
+        },
+        { "title": "🩺 Cervical Cancer Detection",
+            "desc": "AI-driven academic project using research papers for cancer detection.",
+            "link": "#"
+        }]
 
     for project in project_list:
         with st.container():
