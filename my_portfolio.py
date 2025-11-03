@@ -28,7 +28,7 @@ if page == "🏠 Home":
     st.image(image, width=200, caption="Madhura Gundluru", use_container_width=False)
 
     # Resume download
-    with open("Madhura_G.pdf", "rb") as file:  # Make sure file is in same folder
+    with open("Madhura_new.pdf", "rb") as file:  # Make sure file is in same folder
         st.download_button(
             label="📄 Download Resume",
             data=file,
@@ -127,3 +127,4 @@ elif page == "📬 Contact":
     st.text_input("Your Email")
     st.text_area("Your Message")
     st.button("Send Message 🚀")
+
