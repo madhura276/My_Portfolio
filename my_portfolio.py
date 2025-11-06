@@ -104,9 +104,10 @@ elif page == "📂 Projects":
             "desc": "AI-driven academic project using research papers for cancer detection.",
             "link": "#"
         },
-        { "title": "React Profile App"
-          "desc" :"A simple and elegant React web app where users can log in, create, and view their profiles with smooth navigation and clean styling — built using React Router, state management, and CSS."
+        { "title": "React Profile App",
+          "desc" :"A simple and elegant React web app where users can log in, create, and view their profiles with smooth navigation and clean styling — built using React Router, state management, and CSS.",
           "link" :"https://github.com/madhura276/React-Profile-App"
+        }
     ]
 
     for project in project_list:
@@ -131,5 +132,6 @@ elif page == "📬 Contact":
     st.text_input("Your Email")
     st.text_area("Your Message")
     st.button("Send Message 🚀")
+
 
 
