@@ -26,7 +26,7 @@ if page == "🏠 Home":
     image = Image.open("Madhura.jpg")
     st.image(image, width=200, caption="Madhura Gundluru")
 
-    with open("Madhura_new.pdf", "rb") as file:
+    with open("G_Madhura_DS(1).pdf", "rb") as file:
         st.download_button(
             label="📄 Download Resume",
             data=file,
