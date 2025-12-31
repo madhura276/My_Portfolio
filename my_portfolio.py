@@ -57,7 +57,7 @@ elif page == "🛠 Skills":
         - NLP & Text Similarity  
         """)
 
-   with col2:
+    with col2:
         st.subheader("Web Development & Frameworks")
         st.write("""
         - Frontend: React  
@@ -158,6 +158,7 @@ elif page == "📬 Contact":
     st.text_input("Your Email")
     st.text_area("Your Message")
     st.button("Send Message 🚀")
+
 
 
 
