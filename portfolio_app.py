@@ -8,7 +8,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# ---------------- Sidebar Navigation ----------------
+# ---------------- Sidebar Navigation ---------------- 
 st.sidebar.title("🔎 Navigation")
 page = st.sidebar.radio("Go to", ["🏠 Home", "🛠 Skills", "📂 Projects", "📬 Contact"])
 
