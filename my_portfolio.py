@@ -98,30 +98,98 @@ elif page == "📂 Projects":
             ],
             "link": "https://github.com/madhura276/smart-career-recommendation-system"
         },
+
         {
             "title": "📈 Data Analysis with Pandas & NumPy",
-            "skills": ["Python", "Pandas", "NumPy", "EDA"],
+            "skills": ["Python", "Pandas", "NumPy", "EDA", "Data Cleaning"],
             "desc": [
-                "Performed data cleaning and preprocessing.",
-                "Conducted exploratory data analysis.",
-                "Extracted insights using Pandas and NumPy."
+                "Performed data cleaning and preprocessing on real-world datasets.",
+                "Conducted exploratory data analysis to extract insights.",
+                "Used Pandas and NumPy for efficient data manipulation."
             ],
             "link": "https://github.com/madhura276/Netflix_Data_Analysis"
         },
+
         {
             "title": "📊 SMS Spam Detection",
-            "skills": ["Python", "Machine Learning", "NLP"],
+            "skills": ["Python", "Machine Learning", "NLP", "Scikit-learn"],
             "desc": [
-                "Built an NLP-based ML classifier.",
-                "Classified messages as Spam or Not Spam."
+                "Built a Machine Learning model using NLP techniques.",
+                "Classified messages as Spam or Not Spam.",
+                "Applied text preprocessing and feature extraction methods."
             ],
             "link": "https://github.com/madhura276/SMS-Spam-Detection"
+        },
+
+        {
+            "title": "Exploratory Data Analysis (EDA) on Iris Dataset 🌸",
+            "skills": ["Python", "Pandas", "Matplotlib", "Seaborn", "EDA"],
+            "desc": [
+                "Performed detailed exploratory data analysis on the Iris dataset.",
+                "Analyzed feature distributions and relationships across species.",
+                "Created visualizations using Matplotlib and Seaborn."
+            ],
+            "link": "https://github.com/madhura276/Iris_Data_Analysis"
+        },
+
+        {
+            "title": "🛒 Online Shopping Cart",
+            "skills": ["Python", "Application Logic", "OOP"],
+            "desc": [
+                "Developed a shopping cart system with product listing functionality.",
+                "Implemented cart updates and checkout simulation.",
+                "Focused on core application logic and user flow."
+            ],
+            "link": "https://github.com/madhura276/Online-Shopping-Cart"
+        },
+
+        {
+            "title": "🎓 Student Score Manager",
+            "skills": ["Python", "File Handling", "Data Analysis"],
+            "desc": [
+                "Built a Python-based file handling project.",
+                "Managed and analyzed student scores.",
+                "Implemented data storage and retrieval using files."
+            ],
+            "link": "https://github.com/madhura276/student-management-system"
+        },
+
+        {
+            "title": "Student CRUD Application with Python & MySQL",
+            "skills": ["Python", "MySQL", "CRUD Operations", "Database"],
+            "desc": [
+                "Developed a menu-driven Python application.",
+                "Implemented full CRUD operations for student records.",
+                "Integrated MySQL database for persistent data storage."
+            ],
+            "link": "https://github.com/madhura276/Student-CRUD-Python-"
+        },
+
+        {
+            "title": "React Profile App",
+            "skills": ["React", "JavaScript", "React Router", "CSS"],
+            "desc": [
+                "Built a profile management web application using React.",
+                "Implemented routing with React Router.",
+                "Used state management and clean CSS styling."
+            ],
+            "link": "https://github.com/madhura276/React-Profile-App"
+        },
+
+        {
+            "title": "🩺 Cervical Cancer Detection",
+            "skills": ["Machine Learning", "Python", "Healthcare AI", "Research"],
+            "desc": [
+                "AI-driven academic project based on IEEE research papers.",
+                "Focused on cancer detection using machine learning concepts.",
+                "Designed as a research-oriented healthcare application."
+            ],
+            "link": "#"
         }
     ]
 
     for project in project_list:
         st.subheader(project["title"])
-
         st.markdown("**Skills:** " + ", ".join(project["skills"]))
 
         for point in project["desc"]:
@@ -144,3 +212,4 @@ elif page == "📬 Contact":
     st.text_input("Your Email")
     st.text_area("Your Message")
     st.button("Send Message 🚀")
+
