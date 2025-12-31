@@ -83,7 +83,7 @@ elif page == "📂 Projects":
     st.header("📂 Projects Showcase")
 
    project_list = [
-    {
+       {
         "title": "Smart Career Recommendation System (AI-Based)",
         "skills": [
             "Python", "Data Science", "Machine Learning",
@@ -213,6 +213,7 @@ elif page == "📬 Contact":
     st.text_input("Your Email")
     st.text_area("Your Message")
     st.button("Send Message 🚀")
+
 
 
 
