@@ -43,30 +43,70 @@ elif page == "🛠 Skills":
 
     with col1:
         st.subheader("Programming")
-        st.write("- Python\n- JavaScript\n- HTML, CSS")
-
-        st.subheader("Data Science & ML/AI")
+        st.write("""
+        - Python  
+        - JavaScript  
+        - HTML, CSS
+        """)
+    
+        st.subheader("Data Science & ML / AI")
         st.write("""
         - Data Analysis: Pandas, NumPy  
-        - Machine Learning & Deep Learning: Scikit-learn, TensorFlow  
-        - Image Classification, NLP  
+        - Machine Learning: Scikit-learn  
+        - Deep Learning (Basics): TensorFlow  
+        - NLP & Text Similarity  
         """)
 
-    with col2:
+   with col2:
+        st.subheader("Web Development & Frameworks")
+        st.write("""
+        - Frontend: React  
+        - Backend: Django, Node.js  
+        - Database: MongoDB  
+        """)
+    
         st.subheader("Tools & Platforms")
-        st.write("- Streamlit\n- Power BI, Excel\n- GitHub")
+        st.write("""
+        - Streamlit  
+        - Power BI, Excel  
+        - Git & GitHub  
+        """)
 
         st.subheader("Behavioural Skills")
         st.write("""
         - Time Management  
-        - Adaptability
+        - Adaptability  
         """)
-
+    
 # ---------------- PROJECTS ----------------
 elif page == "📂 Projects":
     st.header("📂 Projects Showcase")
 
     project_list = [
+        { "title": "Smart Career Recommendation System (AI-Based)",
+          "desc" :"Built an AI-based career recommendation system using Data Science and Machine Learning to match user skills with relevant job roles.
+          Applied TF-IDF vectorization and cosine similarity to compute semantic similarity between user skills and job requirements.
+          Implemented a hybrid scoring approach combining skill overlap and ML similarity to rank job roles by relevance.
+          Designed Explainable AI insights to clearly justify recommendations and show why a role fits the user.
+          Identified skill gaps and suggested improvements to guide data-driven career upskilling.
+          Developed an end-to-end system using Python, Node.js, MongoDB, React, and Tailwind CSS.",
+          "link" :"https://github.com/madhura276/smart-career-recommendation-system"
+        }
+        {
+            "title": "📈 Data Analysis with Pandas & NumPy",
+            "desc": "Analyzed datasets for cleaning, transformation, and insights.",
+            "link": "https://github.com/madhura276/Netflix_Data_Analysis"
+        },
+        {
+            "title": "📊 SMS Spam Detection",
+            "desc": "A Machine Learning project using NLP to classify messages as Spam or Not Spam.",
+            "link": "https://github.com/madhura276/SMS-Spam-Detection"
+        },
+        {
+            "title":"Exploratory Data Analysis (EDA) on Iris Dataset 🌸",
+            "desc":"Performed detailed EDA on the Iris dataset using Python, Pandas, Matplotlib, and Seaborn, creating visualizations to analyze feature distributions and relationships across species.",
+            "link":"https://github.com/madhura276/Iris_Data_Analysis"
+        },
         {
             
             "title": "🛒 Online Shopping Cart",
@@ -85,29 +125,15 @@ elif page == "📂 Projects":
             "link": "https://github.com/madhura276/Student-CRUD-Python-"
            
         },
-        {
-            "title": "📈 Data Analysis with Pandas & NumPy",
-            "desc": "Analyzed datasets for cleaning, transformation, and insights.",
-            "link": "https://github.com/madhura276/Netflix_Data_Analysis"
-        },
-        {
-            "title": "📊 SMS Spam Detection",
-            "desc": "A Machine Learning project using NLP to classify messages as Spam or Not Spam.",
-            "link": "https://github.com/madhura276/SMS-Spam-Detection"
-        },
-        {
-            "title":"Exploratory Data Analysis (EDA) on Iris Dataset 🌸",
-            "desc":"Performed detailed EDA on the Iris dataset using Python, Pandas, Matplotlib, and Seaborn, creating visualizations to analyze feature distributions and relationships across species.",
-            "link":"https://github.com/madhura276/Iris_Data_Analysis"
-        },
-        { "title": "🩺 Cervical Cancer Detection",
-            "desc": "AI-driven academic project using research papers for cancer detection.",
-            "link": "#"
-        },
         { "title": "React Profile App",
           "desc" :"A simple and elegant React web app where users can log in, create, and view their profiles with smooth navigation and clean styling — built using React Router, state management, and CSS.",
           "link" :"https://github.com/madhura276/React-Profile-App"
         }
+        { "title": "🩺 Cervical Cancer Detection",
+            "desc": "AI-driven academic project using research papers for cancer detection.",
+            "link": "#"
+        },
+        
     ]
 
     for project in project_list:
@@ -132,6 +158,7 @@ elif page == "📬 Contact":
     st.text_input("Your Email")
     st.text_area("Your Message")
     st.button("Send Message 🚀")
+
 
 
 
