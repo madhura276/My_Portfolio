@@ -23,10 +23,10 @@ if page == "🏠 Home":
     I love anime (Naruto 🌀), dance 💃, and exploring new technologies.  
     """)
 
-    image = Image.open("GMadhura(4).jpg")
+    image = Image.open("Madhura.jpg")
     st.image(image, width=200, caption="Madhura Gundluru")
 
-    with open("G_Madhura_DS(1).pdf", "rb") as file:
+    with open("GMadhura(4).pdf", "rb") as file:
         st.download_button(
             label="📄 Download Resume",
             data=file,
@@ -233,6 +233,7 @@ elif page == "📬 Contact":
     st.text_input("Your Email")
     st.text_area("Your Message")
     st.button("Send Message 🚀")
+
 
 
 
