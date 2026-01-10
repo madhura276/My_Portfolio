@@ -23,7 +23,7 @@ if page == "🏠 Home":
     I love anime (Naruto 🌀), dance 💃, and exploring new technologies.  
     """)
 
-    image = Image.open("Madhura.jpg")
+    image = Image.open("GMadhura(4).jpg")
     st.image(image, width=200, caption="Madhura Gundluru")
 
     with open("G_Madhura_DS(1).pdf", "rb") as file:
@@ -50,7 +50,7 @@ elif page == "🛠 Skills":
         st.subheader("Data Science & ML / AI")
         st.markdown("""
         - Data Analysis: Pandas, NumPy  
-        - Machine Learning: Scikit-learn  
+        - Machine Learning: Scikit-learn, Random forest, KNN 
         - Deep Learning (Basics): TensorFlow  
         - NLP & Text Similarity  
         """)
@@ -81,6 +81,27 @@ elif page == "📂 Projects":
     st.header("📂 Projects Showcase")
 
     project_list = [
+        {
+            "title": "Customer Churn Prediction (End-to-End ML Project)",
+            "skills": [
+                "Python", "Data Science", "Machine Learning",
+                "Logistic Regression", "Random Forest",
+                "Data Cleaning", "Feature Engineering",
+                "EDA", "Classification", "Model Evaluation",
+                "Pandas", "NumPy", "Scikit-learn",
+                "Matplotlib", "Seaborn"
+            ],
+            "desc": [
+                "Built an end-to-end machine learning pipeline to predict customer churn using telecom customer data.",
+                "Performed data cleaning, handled missing values, and removed inconsistencies for reliable model input.",
+                "Conducted exploratory data analysis (EDA) using visualizations to understand customer behavior patterns.",
+                "Applied feature engineering and one-hot encoding to convert categorical data into numerical format.",
+                "Trained and evaluated classification models such as Logistic Regression and Random Forest.",
+                "Measured model performance using accuracy, precision, recall, and classification reports to identify churn risk."
+            ],
+            "link": "https://github.com/madhura276/Customer-Churn-Prediction-System"
+        },
+
         {
             "title": "Smart Career Recommendation System (AI-Based)",
             "skills": [
@@ -212,5 +233,6 @@ elif page == "📬 Contact":
     st.text_input("Your Email")
     st.text_area("Your Message")
     st.button("Send Message 🚀")
+
 
 
